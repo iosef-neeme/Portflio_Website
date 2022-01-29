@@ -1,0 +1,19 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Potfolio Website</title>
+        <script src="https://unpkg.com/vue@next"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="app"> 
+
+            <login-form />
+            <hr>
+            <hr>
+            <button @click="toggleBox">Toggle Box</button>
+            <div v-show="isVisible" class="box"></div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
